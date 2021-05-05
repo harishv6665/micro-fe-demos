@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve"
+    "start": "SHELL_PUBLIC_URL=http://localhost:3000 webpack serve",
+    "build": "SHELL_PUBLIC_URL=http://localhost:8000 webpack --mode production"
   },
   "author": "",
   "license": "ISC",

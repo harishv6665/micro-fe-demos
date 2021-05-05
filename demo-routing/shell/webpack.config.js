@@ -42,8 +42,8 @@ module.exports = {
             name: 'shell',
             filename: 'remoteEntry.js',
             remotes: {
-                home: 'home@http://localhost:3001/remoteEntry.js',
-                contact: 'contact@http://localhost:3002/remoteEntry.js',
+                home: `home@${process.env.HOME_PUBLIC_URL}/remoteEntry.js`,
+                contact: `contact@${process.env.CONTACT_PUBLIC_URL}/remoteEntry.js`,
             },
             exposes: {
                 "./Shell": "./src/Shell",

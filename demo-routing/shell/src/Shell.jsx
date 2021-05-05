@@ -14,7 +14,7 @@ const Shell = () => {
                 <p>Below button is rendered from Home app inside shell page</p>
                 <div>
                     <React.Suspense fallback={"Loading"}>
-                        <Button title="Button title passed from shell page" />
+                        <Button title="Button title passed from shell page --fasdfas " />
                     </React.Suspense>
                 </div>
                 <h3>Navigate to pages</h3>
