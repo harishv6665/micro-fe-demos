@@ -7,7 +7,7 @@ module.exports = {
     mode: 'development',
     devServer: {
         contentBase: path.join(__dirname, "dist"),
-        port: 3000,
+        port: 4000,
         historyApiFallback: true,
         hot: false,
         hotOnly: false,
@@ -42,8 +42,10 @@ module.exports = {
             name: 'shell',
             filename: 'remoteEntry.js',
             remotes: {
-                home: `home@${process.env.HOME_PUBLIC_URL}/remoteEntry.js`,
-                contact: `contact@${process.env.CONTACT_PUBLIC_URL}/remoteEntry.js`,
+                // home: `home@${process.env.HOME_PUBLIC_URL}/remoteEntry.js`,
+                // contact: `contact@${process.env.CONTACT_PUBLIC_URL}/remoteEntry.js`,
+                sharedComponents: `sharedComponents@https://checkout-portal.integration.oscato.com/shared-components/remoteEntry.js`,
+                // opxMerchantPortal: `opxMerchantPortal@http://localhost:3000/remoteEntry.js`,
             },
             exposes: {
                 "./Shell": "./src/Shell",
